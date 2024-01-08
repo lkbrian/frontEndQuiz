@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  background: linear-gradient(rgba(255, 28, 125, 0.4), rgb(0, 7, 46)),
+    url("./assets/body-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#right,
+#left,
+.questions,
+.answers {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  width: 50%;
+}
+#left {
+  gap: 90px;
+}
+.text {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+.bold {
+  font-weight: 800;
+}
+#pick {
+  font-style: italic;
+}
+img {
+  height: 50px;
+  width: 50px;
+}
+.subject {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  border-radius: 0.4rem;
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+}
+.subject a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* quiz app html */
+.subject input {
+  height: 20px;
+  width: 20px;
+}
+.questions {
+  align-items: start;
+  padding: 30px;
+}
+.questions .question {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.questions .level {
+  padding-top: 90px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.qnumber {
+  font-weight: 450;
+  font-size: 1.2rem;
+  color: #80ffe8;
+  letter-spacing: 2px;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+#submit {
+  width: 100px;
+  border-radius: 0.3rem;
+  line-height: 40px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  background: #80ffe8;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+.title {
+  position: absolute;
+  top: 0;
+  width: auto;
+  top: 5%;
+  left: 5%;
+  padding: 7px 25% 7px 7px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+}

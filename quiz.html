@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+    <title>Quiz app</title>
+  </head>
+  <body class="">
+    <section class="questions">
+      <p class="qnumber"></p>
+      <p class="question">
+        "Explain the difference between 'block-level' and 'inline' elements in
+        HTML."
+      </p>
+      <p class="level"></p>
+    </section>
+    <section class="answers">
+      <div class="subject">
+        <input type="radio" name="answer" id="option1" />
+        <label id="ans1" for="option1"></label>
+      </div>
+      <div class="subject">
+        <input type="radio" name="answer" id="option2" />
+        <label id="ans2" for="option2"></label>
+      </div>
+      <div class="subject">
+        <input type="radio" name="answer" id="option3" />
+        <label id="ans3" for="option3"></label>
+      </div>
+      <div class="subject">
+        <input type="radio" name="answer" id="option4" />
+        <label id="ans4" for="option4"></label>
+      </div>
+      <input type="submit" value="Next" id="submit" />
+    </section>
+    <div class="subject title">
+      <img src="./assets/HTML.png" alt="" />
+      <a href="#">html</a>
+    </div>
+  </body>
+</html>

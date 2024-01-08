@@ -1,0 +1,552 @@
+{
+  "questions": {
+    "html": [
+      {
+        "id": 1,
+        "question": "What does HTML stand for?",
+        "options": [
+          "Hypertext Markup Language",
+          "Hyper Transfer Markup Language",
+          "High-Level Text Markup Language",
+          "Home Tool Markup Language"
+        ],
+        "answer": "Hypertext Markup Language",
+        "difficulty": "easy"
+      },
+      {
+        "id": 2,
+        "question": "Which HTML tag is used for creating an unordered list?",
+        "options": ["<ul>", "<ol>", "<li>", "<dl>"],
+        "answer": "<ul>",
+        "difficulty": "easy"
+      },
+      {
+        "id": 3,
+        "question": "What is the purpose of the 'alt' attribute in an HTML image tag?",
+        "options": [
+          "Alternative text for the image",
+          "Alignment of the image",
+          "Attribute list for the image",
+          "Animated loop time"
+        ],
+        "answer": "Alternative text for the image",
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "question": "Which HTML tag is used for creating a hyperlink?",
+        "options": ["<a>", "<link>", "<href>", "<url>"],
+        "answer": "<a>",
+        "difficulty": "easy"
+      },
+      {
+        "id": 5,
+        "question": "In HTML, what is the correct way to add a comment?",
+        "options": [
+          "<!-- This is a comment -->",
+          "// This is a comment",
+          "' This is a comment",
+          "# This is a comment"
+        ],
+        "answer": "<!-- This is a comment -->",
+        "difficulty": "easy"
+      },
+      {
+        "id": 6,
+        "question": "Which HTML tag is used for creating a table?",
+        "options": ["<table>", "<tr>", "<td>", "<th>"],
+        "answer": "<table>",
+        "difficulty": "medium"
+      },
+      {
+        "id": 7,
+        "question": "What is the purpose of the 'DOCTYPE' declaration in HTML?",
+        "options": [
+          "Defines the document type and version of HTML",
+          "Declares a new document",
+          "Specifies the document encoding",
+          "Sets the document language"
+        ],
+        "answer": "Defines the document type and version of HTML",
+        "difficulty": "medium"
+      },
+      {
+        "id": 8,
+        "question": "Which HTML tag is used for creating a form?",
+        "options": ["<form>", "<input>", "<button>", "<label>"],
+        "answer": "<form>",
+        "difficulty": "easy"
+      },
+      {
+        "id": 9,
+        "question": "What is the purpose of the 'meta' tag in HTML?",
+        "options": [
+          "Defines metadata about the document",
+          "Specifies the document title",
+          "Creates a new HTML element",
+          "Adds a script to the document"
+        ],
+        "answer": "Defines metadata about the document",
+        "difficulty": "medium"
+      },
+      {
+        "id": 10,
+        "question": "Which HTML tag is used for creating a line break?",
+        "options": ["<br>", "<lb>", "<newline>", "<break>"],
+        "answer": "<br>",
+        "difficulty": "easy"
+      },
+      {
+        "id": 11,
+        "question": "What is the purpose of the 'data-*' attributes in HTML?",
+        "options": [
+          "Styling elements with custom data",
+          "Providing additional information using custom attributes",
+          "Defining inline JavaScript functions",
+          "Linking external data files"
+        ],
+        "answer": "Providing additional information using custom attributes",
+        "difficulty": "hard"
+      },
+      {
+        "id": 12,
+        "question": "Explain the difference between 'block-level' and 'inline' elements in HTML.",
+        "options": [
+          "Block-level elements stack vertically, while inline elements stack horizontally",
+          "Block-level elements are displayed without line breaks, while inline elements respect line breaks",
+          "Block-level elements cannot contain inline elements, while inline elements can contain block-level elements",
+          "Block-level elements have a fixed width, while inline elements adjust to the content width"
+        ],
+        "answer": "Block-level elements stack vertically, while inline elements stack horizontally",
+        "difficulty": "hard"
+      },
+      {
+        "id": 13,
+        "question": "What is the purpose of the 'figure' and 'figcaption' elements in HTML?",
+        "options": [
+          "Defining images and their captions",
+          "Creating complex layouts",
+          "Styling text with custom fonts",
+          "Embedding videos"
+        ],
+        "answer": "Defining images and their captions",
+        "difficulty": "hard"
+      },
+      {
+        "id": 14,
+        "question": "Explain the concept of HTML semantic elements and provide examples.",
+        "options": [
+          "Semantic elements add style to the document",
+          "Semantic elements carry no meaning",
+          "Semantic elements convey meaning about the structure of the document",
+          "Semantic elements are only used for styling purposes"
+        ],
+        "answer": "Semantic elements convey meaning about the structure of the document",
+        "difficulty": "hard"
+      },
+      {
+        "id": 15,
+        "question": "What is the purpose of the 'details' and 'summary' elements in HTML?",
+        "options": [
+          "Creating dropdown menus",
+          "Defining metadata for search engines",
+          "Creating collapsible content sections",
+          "Styling navigation menus"
+        ],
+        "answer": "Creating collapsible content sections",
+        "difficulty": "hard"
+      }
+    ],
+    "css": [
+      {
+        "id": 1,
+        "question": "What does CSS stand for?",
+        "options": [
+          "Counter Strike: Source",
+          "Computer Style Sheets",
+          "Creative Style Sheets",
+          "Cascading Style Sheets"
+        ],
+        "answer": "Cascading Style Sheets",
+        "difficulty": "easy"
+      },
+      {
+        "id": 2,
+        "question": "Which CSS property is used for changing the text color of an element?",
+        "options": ["color", "text-color", "font-color", "foreground-color"],
+        "answer": "color",
+        "difficulty": "easy"
+      },
+      {
+        "id": 3,
+        "question": "What is the default value of the 'position' property in CSS?",
+        "options": ["relative", "static", "absolute", "fixed"],
+        "answer": "static",
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "question": "Which CSS property is used for controlling the spacing between elements?",
+        "options": ["margin", "padding", "border", "spacing"],
+        "answer": "margin",
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "question": "In CSS, what does the 'float' property do?",
+        "options": [
+          "Moves an element to the right or left of its container",
+          "Increases the font size",
+          "Changes the element's background color",
+          "Applies a shadow to the element"
+        ],
+        "answer": "Moves an element to the right or left of its container",
+        "difficulty": "medium"
+      },
+      {
+        "id": 6,
+        "question": "Which CSS pseudo-class is used for styling a link that has been visited?",
+        "options": [":visited", ":link", ":hover", ":active"],
+        "answer": ":visited",
+        "difficulty": "easy"
+      },
+      {
+        "id": 7,
+        "question": "What is the purpose of the 'box-sizing' property in CSS?",
+        "options": [
+          "Controls how the width and height are calculated",
+          "Sets the border style of an element",
+          "Changes the box model",
+          "Defines the layout of a page"
+        ],
+        "answer": "Controls how the width and height are calculated",
+        "difficulty": "medium"
+      },
+      {
+        "id": 8,
+        "question": "Which CSS unit is relative to the font-size of the root element?",
+        "options": ["em", "px", "rem", "vw"],
+        "answer": "rem",
+        "difficulty": "medium"
+      },
+      {
+        "id": 9,
+        "question": "What does the 'z-index' property in CSS control?",
+        "options": [
+          "Element visibility",
+          "Element positioning along the z-axis",
+          "Element opacity",
+          "Element rotation"
+        ],
+        "answer": "Element positioning along the z-axis",
+        "difficulty": "medium"
+      },
+      {
+        "id": 10,
+        "question": "Which CSS property is used for setting the background color of an element?",
+        "options": ["background-color", "color", "background", "bg-color"],
+        "answer": "background-color",
+        "difficulty": "easy"
+      },
+      {
+        "id": 11,
+        "question": "Explain the CSS Box Model and its components.",
+        "options": [
+          "The CSS Box Model is not used in modern web design",
+          "The Box Model includes margin, border, padding, and content",
+          "The Box Model only includes width and height",
+          "The Box Model is used exclusively for styling text"
+        ],
+        "answer": "The Box Model includes margin, border, padding, and content",
+        "difficulty": "hard"
+      },
+      {
+        "id": 12,
+        "question": "What is the purpose of the 'transform' property in CSS?",
+        "options": [
+          "Changes the font style of text",
+          "Applies 3D transformations to elements",
+          "Flips the layout of the page",
+          "Sets the background image"
+        ],
+        "answer": "Applies 3D transformations to elements",
+        "difficulty": "hard"
+      },
+      {
+        "id": 13,
+        "question": "Explain the CSS specificity hierarchy.",
+        "options": [
+          "The hierarchy is based on alphabetical order",
+          "The hierarchy is based on the order of elements in the HTML document",
+          "The hierarchy is based on the importance of styles",
+          "The hierarchy is based on the complexity of selectors"
+        ],
+        "answer": "The hierarchy is based on the importance of styles",
+        "difficulty": "hard"
+      },
+      {
+        "id": 14,
+        "question": "What is the purpose of the 'keyframes' rule in CSS?",
+        "options": [
+          "Defines the layout of a page",
+          "Specifies the font style for text",
+          "Creates animations by gradually changing from one set of CSS styles to another",
+          "Sets the order of elements in the HTML document"
+        ],
+        "answer": "Creates animations by gradually changing from one set of CSS styles to another",
+        "difficulty": "hard"
+      },
+      {
+        "id": 15,
+        "question": "Explain the concept of CSS Grid Layout and its advantages.",
+        "options": [
+          "CSS Grid Layout is used for text formatting",
+          "CSS Grid Layout is a layout system for the web that allows complex two-dimensional layouts",
+          "CSS Grid Layout only works with inline elements",
+          "CSS Grid Layout is an outdated styling technique"
+        ],
+        "answer": "CSS Grid Layout is a layout system for the web that allows complex two-dimensional layouts",
+        "difficulty": "hard"
+      },
+      {
+        "id": 16,
+        "question": "Explain the concept of CSS Grid Layout and its advantages.",
+        "options": [
+          "CSS Grid Layout is used for text formatting",
+          "CSS Grid Layout is a layout system for the web that allows complex two-dimensional layouts",
+          "CSS Grid Layout only works with inline elements",
+          "CSS Grid Layout is an outdated styling technique"
+        ],
+        "answer": "CSS Grid Layout is a layout system for the web that allows complex two-dimensional layouts",
+        "difficulty": "hard"
+      }
+    ],
+    "js": [
+      {
+        "id": 1,
+        "question": "Explain the concept of the 'RESTful API' in JavaScript.",
+        "options": [
+          "RESTful API is a method for creating dynamic web pages",
+          "RESTful API is a programming paradigm that uses HTTP requests to perform CRUD (Create, Read, Update, Delete) operations",
+          "RESTful API is only used for server-side JavaScript",
+          "RESTful API is an outdated approach to web development"
+        ],
+        "answer": "RESTful API is a programming paradigm that uses HTTP requests to perform CRUD (Create, Read, Update, Delete) operations",
+        "difficulty": "hard"
+      },
+      {
+        "id": 2,
+        "question": "Which keyword is used for declaring variables in JavaScript?",
+        "options": ["var", "let", "const", "variable"],
+        "answer": "var",
+        "difficulty": "easy"
+      },
+      {
+        "id": 3,
+        "question": "Which object is used for handling errors in JavaScript?",
+        "options": ["Error", "Exception", "Failure", "Fault"],
+        "answer": "Error",
+        "difficulty": "medium"
+      },
+      {
+        "id": 4,
+        "question": "How do you write a single-line comment in JavaScript?",
+        "options": [
+          "// This is a comment",
+          "# This is a comment",
+          "/* This is a comment */",
+          "' This is a comment"
+        ],
+        "answer": "// This is a comment",
+        "difficulty": "easy"
+      },
+      {
+        "id": 5,
+        "question": "Explain the difference between 'let', 'const', and 'var' in JavaScript.",
+        "options": [
+          "They are interchangeable and can be used in any context",
+          "'let' is used for variables that should not be reassigned, 'const' is used for variables that can be reassigned, and 'var' is an outdated keyword",
+          "'let' is block-scoped, 'const' is function-scoped, and 'var' is globally scoped",
+          "'let' is for integers, 'const' is for constants, and 'var' is for variables"
+        ],
+        "answer": "'let' is block-scoped, 'const' is function-scoped, and 'var' is globally scoped",
+        "difficulty": "hard"
+      },
+      {
+        "id": 6,
+        "question": "What is the purpose of the 'addEventListener()' method in JavaScript?",
+        "options": [
+          "Attaches an event handler to an element",
+          "Creates a new element",
+          "Removes an element from the DOM",
+          "Changes the element's style"
+        ],
+        "answer": "Attaches an event handler to an element",
+        "difficulty": "medium"
+      },
+      {
+        "id": 7,
+        "question": "Explain the concept of the 'this' keyword in JavaScript.",
+        "options": [
+          "The 'this' keyword is used for creating loops",
+          "The 'this' keyword refers to the current instance of the function or object",
+          "The 'this' keyword is only used in arrow functions",
+          "The 'this' keyword is a reserved keyword that cannot be used in JavaScript"
+        ],
+        "answer": "The 'this' keyword refers to the current instance of the function or object",
+        "difficulty": "hard"
+      },
+      {
+        "id": 8,
+        "question": "Which built-in function is used for parsing a string to an integer in JavaScript?",
+        "options": [
+          "parseInt()",
+          "parseFloat()",
+          "stringToInt()",
+          "toInteger()"
+        ],
+        "answer": "parseInt()",
+        "difficulty": "medium"
+      },
+      {
+        "id": 9,
+        "question": "What is the purpose of the 'setTimeout()' function in JavaScript?",
+        "options": [
+          "Delays the execution of a function",
+          "Sets the interval between function calls",
+          "Clears a timeout",
+          "Returns the current date and time"
+        ],
+        "answer": "Delays the execution of a function",
+        "difficulty": "medium"
+      },
+      {
+        "id": 10,
+        "question": "What is the purpose of the 'console.log()' function in JavaScript?",
+        "options": [
+          "Prints output to the console",
+          "Displays a popup message",
+          "Logs errors to a file",
+          "Creates a new variable"
+        ],
+        "answer": "Prints output to the console",
+        "difficulty": "easy"
+      },
+      {
+        "id": 11,
+        "question": "What is a closure in JavaScript, and how does it work?",
+        "options": [
+          "A closure is a type of loop in JavaScript",
+          "A closure is a way to execute code asynchronously",
+          "A closure is a function that retains access to variables from its lexical scope even after the scope has finished executing",
+          "A closure is a built-in JavaScript data type"
+        ],
+        "answer": "A closure is a function that retains access to variables from its lexical scope even after the scope has finished executing",
+        "difficulty": "hard"
+      },
+      {
+        "id": 12,
+        "question": "Explain the concept of prototypal inheritance in JavaScript.",
+        "options": [
+          "Prototypal inheritance is not a feature of JavaScript",
+          "Prototypal inheritance is a way to create static classes in JavaScript",
+          "Prototypal inheritance is a mechanism by which objects inherit features from one another",
+          "Prototypal inheritance is limited to predefined JavaScript objects"
+        ],
+        "answer": "Prototypal inheritance is a mechanism by which objects inherit features from one another",
+        "difficulty": "hard"
+      },
+      {
+        "id": 13,
+        "question": "What are Promises in JavaScript, and how do they work?",
+        "options": [
+          "Promises are used for styling in JavaScript",
+          "Promises are a way to handle asynchronous operations and represent a value that might be available now, or in the future",
+          "Promises are only used for error handling",
+          "Promises are a feature exclusive to server-side JavaScript"
+        ],
+        "answer": "Promises are a way to handle asynchronous operations and represent a value that might be available now, or in the future",
+        "difficulty": "hard"
+      },
+      {
+        "id": 14,
+        "question": "Which operator is used for strict equality in JavaScript?",
+        "options": ["==", "===", "!=", "!=="],
+        "answer": "===",
+        "difficulty": "medium"
+      },
+      {
+        "id": 15,
+        "question": "What is the purpose of the 'async/await' syntax in JavaScript?",
+        "options": [
+          "It is used for defining functions asynchronously",
+          "It is a shorthand for writing 'if' statements in JavaScript",
+          "It is used for handling asynchronous operations in a more readable and synchronous-like manner",
+          "It is an alternative syntax for arrow functions"
+        ],
+        "answer": "It is used for handling asynchronous operations in a more readable and synchronous-like manner",
+        "difficulty": "hard"
+      },
+      {
+        "id": 16,
+        "question": "Explain the concept of the Event Loop in JavaScript.",
+        "options": [
+          "The Event Loop is used for styling web pages",
+          "The Event Loop is a mechanism for handling asynchronous operations by continuously checking the call stack and message queue",
+          "The Event Loop is a tool for creating animations in JavaScript",
+          "The Event Loop is an outdated feature of JavaScript"
+        ],
+        "answer": "The Event Loop is a mechanism for handling asynchronous operations by continuously checking the call stack and message queue",
+        "difficulty": "hard"
+      },
+      {
+        "id": 17,
+        "question": "What is the purpose of the 'Map' and 'Set' objects in JavaScript?",
+        "options": [
+          "Map and Set objects are not part of JavaScript",
+          "Map is used for mapping values to keys, and Set is used for creating sets of unique values",
+          "Map is used for creating sets of unique values, and Set is used for mapping values to keys",
+          "Map and Set objects are used for defining variables"
+        ],
+        "answer": "Map is used for mapping values to keys, and Set is used for creating sets of unique values",
+        "difficulty": "hard"
+      },
+      {
+        "id": 18,
+        "question": "In JavaScript, what does the 'typeof' operator do?",
+        "options": [
+          "Returns the type of a variable or expression",
+          "Declares a new variable",
+          "Converts a string to a number",
+          "Checks if a variable is defined"
+        ],
+        "answer": "Returns the type of a variable or expression",
+        "difficulty": "medium"
+      },
+      {
+        "id": 19,
+        "question": "What is the purpose of the 'localStorage' and 'sessionStorage' objects in JavaScript?",
+        "options": [
+          "They are used for styling web pages",
+          "localStorage is used for storing data with no expiration time, and sessionStorage is used for storing data for the duration of the page session",
+          "localStorage is used for storing data for the duration of the page session, and sessionStorage is used for storing data with no expiration time",
+          "localStorage and sessionStorage are used for creating animations in JavaScript"
+        ],
+        "answer": "localStorage is used for storing data with no expiration time, and sessionStorage is used for storing data for the duration of the page session",
+        "difficulty": "hard"
+      },
+      {
+        "id": 20,
+        "question": "What does JS stand for?",
+        "options": [
+          "Java Syntax",
+          "Just Scripting",
+          "Joint Standard",
+          "JavaScript"
+        ],
+        "answer": "JavaScript",
+        "difficulty": "easy"
+      }
+    ]
+  }
+}
