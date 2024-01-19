@@ -54,7 +54,7 @@ select option {
   width: auto;
 }
 .questions{
-  width: 85%;
+  width: 600px;
 }
 .text {
   font-size: 3.5rem;
@@ -63,6 +63,11 @@ select option {
 
 #pick {
   font-style: italic;
+}
+.quizcontainer{
+  display: flex;
+align-items: center;
+  justify-content: center;
 }
 
 .options {
@@ -73,17 +78,16 @@ select option {
   color: #00072e;
   backdrop-filter: blur(4px);
   border-radius: 0.4rem;
-  padding: 10px;
+  padding: 20px 10px;
   width: 500px;
-  margin: auto;
   font-weight: 500;
-  transition: background 0.3s ease-in-out;
+  scale: 1;
+  transition: scale 0.3s ease-in-out;
   cursor: pointer;
 }
-/* .options:hover{
-  background: #00072e;
-  color: #ffffff;
-} */
+.options:hover{
+ scale: 1.1;
+}
 
 /* quiz app html */
 .input {
@@ -97,6 +101,7 @@ select option {
 .questions .question {
   font-size: 2rem;
   font-weight: 600;
+  align-self: center;
 }
 .questions .level {
   font-style: italic;
@@ -114,10 +119,9 @@ select option {
   width: auto;
   border-radius: 0.3rem;
   outline: none;
-  border: none;
-  padding: 0 8px;
   color: #fff;
   background: #00072e;
+  border: 1px solid;
   box-shadow: 2px 2px 0px 0px rgba(255,255,255,1);
   font-weight: 600; 
   margin-top: 15px;
@@ -140,7 +144,7 @@ select option {
   backdrop-filter: blur(8px);
 }
 .flex-col,
-.flex-roe {
+.flex-row {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,7 +157,7 @@ select option {
   border-radius: 12px;
   height: 310px;
   width: 450px;
-  justify-content: start;
+  justify-content: space-evenly;
   gap: 30px;
   padding: 15px 10px;
   position: relative;
@@ -172,7 +176,7 @@ select option {
   height: 3px;
   width: 30%;
   position: absolute;
-  top: 52px;
+  top: 72px;
   border-radius: 3rem;
 }
 #results-container {
@@ -183,7 +187,7 @@ select option {
   letter-spacing: 1px;
   width: 70%;
   align-items: start;
-  gap: 15px;
+  gap: 35px;
 }
 #remark {
   font-size: 1.1rem;
@@ -199,6 +203,7 @@ select option {
   padding: 12px 24px;
   letter-spacing: 1px;
   font-size: 0.9rem;
+  cursor: pointer;
 }
  .immidiate-feed{
   display: flex;
@@ -228,6 +233,7 @@ select option {
  .wrong-feed{
   background: rgb(204, 45, 45);
   padding: 5px;
+  width: 400px;
   border-radius: 6px;
   display: none;
  }

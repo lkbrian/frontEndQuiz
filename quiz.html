@@ -14,7 +14,7 @@
     <title>Quiz app</title>
   </head>
   <body>
-    <section class="quizcontainer">
+    <section class="quizcontainer"id="quizcontainer">
       <section class="choose">
         <!-- <label for="language">choose language</label> -->
         <select name="language" id="select">
@@ -45,11 +45,9 @@
       <h2>Quiz Results</h2>
       <div class="line"></div>
       <div id="results-container"class="flex-col">
-        <p id="score">your score is 14</p>
-        <p id="failed-questions">you failed 6</p>
         <p id="remark">Good job! Solid effort. Review, and you'll excel even more next time.</p>
     </div>
-    <button id="restart-button" onclick="restartQuiz()">Restart Quiz</button>
+    <button id="restart-button" onclick="restartQuiz('#feedback','#quizcontainer','#select')">Restart Quiz</button>
 
     </section>
   </body>
