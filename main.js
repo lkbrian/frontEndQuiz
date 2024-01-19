@@ -1,44 +1,127 @@
-let questionNumber = document.querySelector('.qnumber')
-const question = document.querySelector(".question");
-let  level = document.querySelector('.level')
+document.addEventListener("DOMContentLoaded", () => {
+  let questionNumber = document.querySelector(".qnumber");
+  let level = document.querySelector(".level");
+  const question = document.querySelector(".question");
+  const submit = document.querySelector("#submit");
+  const select = document.getElementById("select");
+  const answersContainer = document.getElementById("answer");
 
-let option1 =document.querySelector('#ans1')
-let option2 =document.querySelector('#ans2')
-let option3 =document.querySelector('#ans3')
-let option4 =document.querySelector('#ans4')
-const nextBtn = document.querySelector("#submit")
+  let dataStorage = [];
+  let userScore = 0;
+  let questionIndex = 0;
 
 
-function data() {
- return fetch("http://localhost:3000/questions")
-    .then((response) => response.json())
-    .then((data) => {
-        data
-        buildHtml(data)
+  select.addEventListener("change", handleLanguage);
+
+  function handleLanguage() {
+    const selectedLanguage = select.value;
+
+    select.style.display = 'none'
+
+    fetchData(selectedLanguage);
+  }
+
+  function fetchData(language) {
+    const API_URL = `http://localhost:3000/${language}`;
+    fetch(API_URL)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        dataStorage = data;        
+        loadQuiz(dataStorage);
+      })
+      .catch((error) => {
+        console.log("Fetch error:", error);
+      });
+  }
+
+  function shuffleArray(array) {
+    const shuffledArray = [...array];
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+    return shuffledArray;
+  }
+
+  function loadQuiz(language) {
+    // Display a single question based on questionIndex
+    const element = language[questionIndex];
+
+    questionNumber.textContent = `Question ${questionIndex + 1} of ${language.length}`;
+    question.innerHTML = element.question;
+    level.textContent = `Difficulty: ${element.difficulty}`;
+
+    let options = element.options;
+
+    answersContainer.innerHTML = ""; // Clear previous options
+    options.forEach((option) => {
+      const optionCard = document.createElement("div");
+      optionCard.className = "options";
+      optionCard.innerHTML = ` <input type="radio" class="input" name="answer" value="${option}"> ${option}`;
+      answersContainer.appendChild(optionCard);
     });
-}
-data()
-function buildHtml(quiz) {
-  const html = quiz.html;
-  console.log(html);
-  function getAnswers(elem) {
-    questionNumber.textContent =`Question ${elem.id} of 15`
-    question.textContent = elem.question
-    option1.textContent= elem.options[0]
-    option2.textContent= elem.options[1]
-    option3.textContent= elem.options[2]
-    option4.textContent= elem.options[3]
-    level.textContent=`Difficulty: ${elem.difficulty}`
-}
-    html.forEach((element,index) => {
-        setTimeout(() => {
-        console.log(element.question)
-        getAnswers(element)
-    },index*10000);
-    });
+  }
 
-}
+  function submitAnswer() {
+    const selectedOption = document.querySelector('input[name="answer"]:checked');
 
-function computeScore() {}
+    if (selectedOption) {
+      const selectedValue = selectedOption.value;
+      const correctAnswer = dataStorage[questionIndex].answer;
 
+      //console.log("Your answer: " + selectedValue);
+      const score = document.querySelector('.user-score')    
+      const correctFeed = document.querySelector('.correct-feed')      
+      const wrongFeed = document.querySelector('.wrong-feed')
+
+      if (selectedValue === correctAnswer) {
+
+        score.textContent= `Score ${++userScore}`;        
+        correctFeed.style.display = "block";
+        correctFeed.textContent ="Correct!" ;
+        wrongFeed.style.display = "none";
+      } else {
+        wrongFeed.style.display = "block"
+        wrongFeed.innerHTML = `Incorrect <br>Correct answer:  ${correctAnswer}`;
+        correctFeed.style.display = "none";
+
+
+    }
+
+      // Delay for 2 seconds before moving to the next question
+      setTimeout(() => {
+        
+        questionIndex++;
+
+        if (questionIndex < dataStorage.length) {
+          loadQuiz(dataStorage);
+        } else {
+          console.log("Quiz completed!");
+          // Here, you can display the user's score or perform other actions
+
+
+        resetQuizState();
+        }
+
+
+
+      }, 1000);
+    } else {
+      console.log("Please select an answer.");
+    }
+  }
+  function resetQuizState() {
+    // Reset quiz state for the next quiz
+    quizStarted = false;
+    questionIndex = 0;
+    userScore = 0;
+  }
+
+  submit.addEventListener("click", submitAnswer);
+});
 

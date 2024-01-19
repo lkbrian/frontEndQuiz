@@ -1,6 +1,5 @@
 {
-  "questions": {
-    "html": [
+    "HTML": [
       {
         "id": 1,
         "question": "What does HTML stand for?",
@@ -16,8 +15,8 @@
       {
         "id": 2,
         "question": "Which HTML tag is used for creating an unordered list?",
-        "options": ["<ul>", "<ol>", "<li>", "<dl>"],
-        "answer": "<ul>",
+        "options": ["ul", "ol", "li", "dl"],
+        "answer": "ul",
         "difficulty": "easy"
       },
       {
@@ -43,7 +42,7 @@
         "id": 5,
         "question": "In HTML, what is the correct way to add a comment?",
         "options": [
-          "<!-- This is a comment -->",
+          "(<! --' This is a comment '-->)",
           "// This is a comment",
           "' This is a comment",
           "# This is a comment"
@@ -156,8 +155,7 @@
         "answer": "Creating collapsible content sections",
         "difficulty": "hard"
       }
-    ],
-    "css": [
+    ], "CSS": [
       {
         "id": 1,
         "question": "What does CSS stand for?",
@@ -307,21 +305,9 @@
         ],
         "answer": "CSS Grid Layout is a layout system for the web that allows complex two-dimensional layouts",
         "difficulty": "hard"
-      },
-      {
-        "id": 16,
-        "question": "Explain the concept of CSS Grid Layout and its advantages.",
-        "options": [
-          "CSS Grid Layout is used for text formatting",
-          "CSS Grid Layout is a layout system for the web that allows complex two-dimensional layouts",
-          "CSS Grid Layout only works with inline elements",
-          "CSS Grid Layout is an outdated styling technique"
-        ],
-        "answer": "CSS Grid Layout is a layout system for the web that allows complex two-dimensional layouts",
-        "difficulty": "hard"
       }
     ],
-    "js": [
+    "JavaScript": [
       {
         "id": 1,
         "question": "Explain the concept of the 'RESTful API' in JavaScript.",
@@ -548,5 +534,4 @@
         "difficulty": "easy"
       }
     ]
-  }
 }

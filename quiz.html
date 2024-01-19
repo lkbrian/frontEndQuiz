@@ -10,40 +10,47 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./main.js" defer></script>
+    <script src="./main.js"></script>
     <title>Quiz app</title>
   </head>
-  <body class="">
-    <section class="questions">
-      <p class="qnumber"></p>
-      <p class="question">
-        "Explain the difference between 'block-level' and 'inline' elements in
-        HTML."
-      </p>
-      <p class="level"></p>
+  <body>
+    <section class="quizcontainer">
+      <section class="choose">
+        <!-- <label for="language">choose language</label> -->
+        <select name="language" id="select">
+          <option id="selectlanguage" value="#">choose here...</option>
+          <option id="selectlanguage" value="JavaScript">JavaScript</option>
+          <option id="selectlanguage" value="CSS">CSS</option>
+          <option id="selectlanguage" value="HTML">HTML</option>
+        </select>
+      </section>
+      <section class="questions">
+        <p class="qnumber"></p>
+        <p class="question">"Pick a laguage to quiz on..."</p>
+        <p class="level"></p>
+      </section>
+      <section class="answers" id="answer"></section>
+      <div class="immidiate-feed">
+        <p class="user-score feed"></p>
+        <div class="answer-feed">
+          <p class="correct-feed feed"></p>
+        <p class="wrong-feed feed"></p>
+        </div>
+      </div>
+      <div class="buttons">
+        <input type="submit" value="Submit Answer" id="submit" />  
+      <!-- thiscomment --->
     </section>
-    <section class="answers">
-      <div class="subject">
-        <input type="radio" name="answer" id="option1" />
-        <label id="ans1" for="option1"></label>
-      </div>
-      <div class="subject">
-        <input type="radio" name="answer" id="option2" />
-        <label id="ans2" for="option2"></label>
-      </div>
-      <div class="subject">
-        <input type="radio" name="answer" id="option3" />
-        <label id="ans3" for="option3"></label>
-      </div>
-      <div class="subject">
-        <input type="radio" name="answer" id="option4" />
-        <label id="ans4" for="option4"></label>
-      </div>
-      <input type="submit" value="Next" id="submit" />
-    </section>
-    <div class="subject title">
-      <img src="./assets/HTML.png" alt="" />
-      <a href="#">html</a>
+    <section id="feedback" class="flex-col">
+      <h2>Quiz Results</h2>
+      <div class="line"></div>
+      <div id="results-container"class="flex-col">
+        <p id="score">your score is 14</p>
+        <p id="failed-questions">you failed 6</p>
+        <p id="remark">Good job! Solid effort. Review, and you'll excel even more next time.</p>
     </div>
+    <button id="restart-button" onclick="restartQuiz()">Restart Quiz</button>
+
+    </section>
   </body>
 </html>
