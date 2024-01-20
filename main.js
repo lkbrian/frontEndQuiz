@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedLanguage = select.value;
 
     select.style.display = "none";
-
+    submit.style.display ="block"
     fetchData(selectedLanguage);
   }
 
@@ -39,17 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
-  function shuffleArray(array) {
-    const shuffledArray = [...array];
-    for (let i = shuffledArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [shuffledArray[i], shuffledArray[j]] = [
-        shuffledArray[j],
-        shuffledArray[i],
-      ];
-    }
-    return shuffledArray;
-  }
+
 
   function loadQuiz(language) {
     // Display a single question based on questionIndex
@@ -88,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (selectedValue === correctAnswer) {
         const totalScore = ++userScore;
-        score.textContent = `Score ${totalScore}`;
+        score.textContent = `Score: ${totalScore}`;
       const totalScores = totalScore
 
         correctFeed.style.display = "block";
@@ -129,32 +119,29 @@ document.addEventListener("DOMContentLoaded", () => {
     if (score === quizData.length) {
       const remarks =
         "Impressive! You aced it. Your knowledge shines. Ready for the next challenge?";
-      remarksContainer.textContent = `Your score is ${score}.  ${remarks}`;
-    } else if (score >= quizData.length / 2 && score < question.length) {
+      remarksContainer.innerHTML = `<span class= "final-score">Your score is: ${score}.</span> <br> ${remarks}`;
+    } else if (score >= quizData.length / 2 && score < quizData.length) {
       const remarks2 =
         "Good job! Solid effort. Review, and you'll excel even more next time.";
-      remarksContainer.textContent = `Your score is ${score}.  ${remarks2}`;
-    } else {
+      remarksContainer.innerHTML = `<span class= "final-score">Your score is: ${score}.</span> <br> ${remarks2}`;
+    } else if (score < quizData.length / 2){
       const remarks3 =
         "Keep going! Learn from errors. Your growth begins with each quiz attempt.";
-      remarksContainer.textContent = `Your score is ${score}.  ${remarks3}`;
+      remarksContainer.innerHTML = `<span class= "final-score">Your score is: ${score}.</span> <br> ${remarks3}`;
     }
   }
   function resetQuiz() {
     // Reset quiz-related variables
     userScore = 0;
     questionIndex = 0;
-
+    correctFeed.style.display = "none";
+    wrongFeed.style.display = "none";
     loadQuiz(dataStorage);
   }
   submit.addEventListener("click", submitAnswer);
 }); 
 
 
-  function restartQuiz(feedbackId,quizcontainerid,selectId) {
-    document.querySelector(feedbackId).style.display = "none";
-   let quiz = document.querySelector(quizcontainerid)
-    document.querySelector(selectId).style.display="block";
-  quiz.style.display="flex";
-  resetQuiz()
+  function restartQuiz() {
+    window.location.reload();
 }
