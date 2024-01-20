@@ -3,7 +3,7 @@
 ## Introduction
 This is the FrontEndQuiz i started off with project planning and managent
 i used trello to plan and manage my project here is my board 
-`https://trello.com/b/MC4PghV5/quiz-app-project`. i started building my
+https://trello.com/b/MC4PghV5/quiz-app-project. i started building my
 project by creating the basic layout and structure of my page using html
 and css i then futher proceeded to ad functionalies using my js.
 The data used is stored in a json file that acts as a database
