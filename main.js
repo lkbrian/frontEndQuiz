@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let options = element.options;
 
-    answersContainer.innerHTML = ""; // Clear previous options
+    answersContainer.innerHTML = ""; // Clear previous options when moving on to the next question
     options.forEach((option) => {
       const optionCard = document.createElement("div");
       optionCard.className = "options";
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (selectedValue === correctAnswer) {
         const totalScore = ++userScore;
-        score.textContent = `Score: ${totalScore}`;
+        // score.textContent = `Score: ${totalScore}`;
       const totalScores = totalScore
 
         correctFeed.style.display = "block";
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         correctFeed.style.display = "none";
       }
 
-      // Delay for 2 seconds 
+      // Delay for 1 seconds 
       setTimeout(() => {
         questionIndex++;
 

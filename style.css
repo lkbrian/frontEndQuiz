@@ -273,13 +273,15 @@ b{
   font-weight: 450;
 }
 .correct-feed {
-  background: rgb(63, 172, 63);
+  background: #fff;
+  color: #00072e;
   padding: 8px 10px;
   border-radius: 6px;
   display: none;
 }
 .wrong-feed {
-  background: rgb(204, 45, 45);
+  background: #fff;
+  color: #00072e;
   padding: 5px;
   width: 450px;
   border-radius: 6px;
@@ -288,6 +290,7 @@ b{
   font-weight: 400;
   text-align: center;
   line-height: 24px;
+  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
 }
 .final-score{
   font-weight: 550;
