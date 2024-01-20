@@ -275,7 +275,13 @@ b{
 .correct-feed {
   background: #fff;
   color: #00072e;
+  border: 2px solid #4CAF50;
+  box-shadow: 4px 4px 0px 0px #4CAF50;
   padding: 8px 10px;
+  width: 180px;
+  /* height: 60px; */
+  line-height: 30px;
+  text-align: center;
   border-radius: 6px;
   display: none;
 }
@@ -290,10 +296,15 @@ b{
   font-weight: 400;
   text-align: center;
   line-height: 24px;
-  box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+  border: 2px solid #F44336;
+  box-shadow: 5px 5px 0px 0px #F44336;
 }
+/* js classeson created element using innerhtml */
 .final-score{
   font-weight: 550;
+}
+.wrong{
+font-size: 1.35rem;
 }
 footer{
   position: fixed;

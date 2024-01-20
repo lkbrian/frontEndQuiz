@@ -82,13 +82,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const totalScores = totalScore
 
         correctFeed.style.display = "block";
-        correctFeed.textContent = "Correct!";
+        correctFeed.innerHTML = `Correct <i class="fa-solid fa-circle-check wrong"></i>`;
         wrongFeed.style.display = "none";
 
         getRemarks(totalScores, dataStorage);
       } else {
         wrongFeed.style.display = "block";
-        wrongFeed.innerHTML = `Incorrect <br>Correct answer:  ${correctAnswer}`;
+        wrongFeed.innerHTML = `<b>INCORRECT</b> <i class="fa-solid fa-circle-xmark wrong"></i> <br>Correct answer:  ${correctAnswer}`;
         correctFeed.style.display = "none";
       }
 
