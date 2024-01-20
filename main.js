@@ -119,15 +119,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (score === quizData.length) {
       const remarks =
         "Impressive! You aced it. Your knowledge shines. Ready for the next challenge?";
-      remarksContainer.innerHTML = `<span class= "final-score">Your score is: ${score}.</span> <br> ${remarks}`;
+      remarksContainer.innerHTML = `<span class= "final-score">You Scored: ${score}.</span> <br> ${remarks}`;
     } else if (score >= quizData.length / 2 && score < quizData.length) {
       const remarks2 =
         "Good job! Solid effort. Review, and you'll excel even more next time.";
-      remarksContainer.innerHTML = `<span class= "final-score">Your score is: ${score}.</span> <br> ${remarks2}`;
+      remarksContainer.innerHTML = `<span class= "final-score">You Scored: ${score}.</span> <br> ${remarks2}`;
     } else if (score < quizData.length / 2){
       const remarks3 =
         "Keep going! Learn from errors. Your growth begins with each quiz attempt.";
-      remarksContainer.innerHTML = `<span class= "final-score">Your score is: ${score}.</span> <br> ${remarks3}`;
+      remarksContainer.innerHTML = `<span class= "final-score">You Scored: ${score}.</span> <br> ${remarks3}`;
     }
   }
   function resetQuiz() {
