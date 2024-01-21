@@ -23,6 +23,7 @@ event listener is then added to the `select` element, allowing
 the script to respond to changes. When a change occurs, the selected
 option's value is utilized to retrieve data from the database.json file
 using the JSON server.
+In addition i have added a loader so that it  would tell the user that the quiz is loading
 
 ### `function fetchData()`
 

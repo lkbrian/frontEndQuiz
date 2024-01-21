@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const answersContainer = document.getElementById("answer");
   const feedbackSection = document.getElementById("feedback");
   const quizcontainer = document.querySelector(".quizcontainer");
+  const loader = document.querySelector('.loader')
   let dataStorage = [];
   let userScore = 0;
   let questionIndex = 0;
@@ -18,11 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     select.style.display = "none";
     submit.style.display ="block"
+    loader.style.display= "block"
     fetchData(selectedLanguage);
   }
 
   function fetchData(language) {
-    const API_URL = `http://localhost:3000/${language}`;
+    const API_URL = `https://frontendquiz-dim3.onrender.com/${language}`;
     fetch(API_URL)
       .then((response) => {
         if (!response.ok) {
@@ -32,10 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .then((data) => {
         dataStorage = data;
+    loader.style.display= "none"
         loadQuiz(dataStorage);
       })
       .catch((error) => {
         console.log("Fetch error:", error);
+        loader.style.display= "none"
+
       });
   }
 
