@@ -24,7 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function fetchData(language) {
+    // online hosted version data hosted on render
     const API_URL = `https://frontendquiz-dim3.onrender.com/${language}`;
+
+    // offline version using localhost: 3000
+    //  const API_URL = `http://localhost:3000/${language}`;
     fetch(API_URL)
       .then((response) => {
         if (!response.ok) {
