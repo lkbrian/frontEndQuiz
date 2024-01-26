@@ -149,8 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   submit.addEventListener("click", submitAnswer);
 }); 
-
-
-  function restartQuiz() {
+function restartQuiz() {
     window.location.reload();
 }
